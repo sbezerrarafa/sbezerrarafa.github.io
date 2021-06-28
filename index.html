@@ -3,285 +3,245 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- <link rel="babakery" href="images/logo.png" type="image/png" />; -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="./src/js/script.js" defer></script>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-a30bcc60-5670-45d0-b604-094e012d886a"></div>
+  <div class="elfsight-app-a30bcc60-5670-45d0-b604-094e012d886a"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-  <title>Rafael Bezerra</title>
+  <title>BA Bakery 2</title>
 
-  <script>
-    function mostra(){
-      if(document.getElementById('mais').style.display=='flex '){
-      document.getElementById('mais').style.display = 'none';
-      }else{document.getElementById('mais').style.display = 'flex'}
-    }
-
-    function mostramodal(){
-
-      if(document.getElementById('mostrando').style.display=='none'){
-      document.getElementById('mostrando').style.display = 'flex'; 
-      }else{document.getElementById('mostrando' ).style.display = 'none'}
-      
-    }
-    function fechamodal(){
-      if(document.getElementById('mostrando').style.display=='flex'){
-      document.getElementById('mostrando').style.display = 'none'; 
-      }else{document.getElementById('mostrando' ).style.display = 'flex'}
-    }
-
-   
-
-    function img1(){
-    document.getElementById("trocarimg").src="./src/images/img1.png"
-  }
-  function img2(){
-    document.getElementById("trocarimg").src="./src/images/img2.png"
-  }
-  function img3(){
-    document.getElementById("trocarimg").src="./src/images/img3.png"
-  }
-
-    
-  </script>
 
 </head>
 
-<body style="background-color: #EFEFEF;">
+<body>
 
-  <header class="header">
-    <div>
-      <nav id="topo" class="lista-menu">
-        <div>
-          <ul class="textos-menu">
-            <li><a href="#historia">QUEM SOMOS</a></li>
-            <li><a href="#">EQUIPE</a></li>
-            <li><a href="#contato">CONTATO</a></li>
-          </ul>
-        </div>
+  <!-- Header -->
 
-        <div class="logo">
-          <a href="index.html">
-            <img src="src/images/logo.png" alt="">
-          </a>
-        </div>
-        <div>
-          <ul class="textos-menu">
-            <li> <a href="http://facebook.com"><img src="src/icons/face.svg" alt=""></a></li>
-            <li> <a href="http://instagram.com"><img src="src/icons/instagram-logo.svg" alt=""></a></li>
-            <li> <a href="http://twitter.com"><img src="src/icons/twitter.svg" alt=""></a></li>
-            <li style="padding-left: 18px;"> <a href="facebook.com"><img src="src/icons/carrinho.svg" alt=""><img src=""
-                  alt=""></a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+  <header class="head" id="topo">
+    <nav class="menu container">
+      <ul class="menu1">
+        <li><a href="#historia">QUEM SOMOS</a></li>
+        <li><a href="#">EQUIPE</a></li>
+        <li><a href="#">CONTATO</a></li>
+      </ul>
+      <div class="logo">
+        <a>
+          <img src="src/images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="menu2">
+        <li> <a href="http://facebook.com"><img src="src/icons/face.svg" alt=""></a></li>
+        <li> <a href="http://instagram.com"><img src="src/icons/instagram-logo.svg" alt=""></a></li>
+        <li> <a href="http://twitter.com"><img src="src/icons/twitter.svg" alt=""></a></li>
+        <li> <a href="#"><img src="src/icons/carrinho.svg" alt=""></a>
+          <div id='carrinho'>
+            <p class="fn-carrinho"></p>
+          </div>
+        </li>
 
+      </ul>
+    </nav>
   </header>
   <div class="dif-menu"></div>
-  <div class="image-capa">
-    <div class="itens-capa">
-      <h2>Sabor em Cada Pedaço.</h2>
+
+  <!-- Capa -->
+
+  <section class="img-capa">
+    <div class="container capa">
+      <h2 class="titulo-capa">Sabor em <br>Cada Pedaço.</h2>
       <button class="btn btn-capa">Nossos Produtos</button>
     </div>
-  </div>
+  </section>
 
-  <div class="sublinhado">
-    <div id="historia" class="texto-hist">
-      <div>
-        <img src="src/images/historia.png" align="left">
-      </div>
-      <div class="text-alig">
-        <h2 style='color: #646464;'>História da Ba Bakery</h2>
-        <p style="color:#646464;font-size: 14px; ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna.
-        </p>
-      </div>
+  <!-- historia -->
+  <section class='historia sumblinhado' id="historias">
+    <img src="src/images/historia.png" align="left">
+    <div class="text-historia">
+      <h2>História da Ba Bakery</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna.
+      </p>
     </div>
+  </section>
 
-    <div class="produtos container">
-      <div class="sumblinhado">
-        <h2>Produtos </h2>
+  <!-- MODAL-->
+  <div class="posicao-modal container">
+    <div id="mostrando" class="modal">
+      <button onclick="fechamodal()" class="btnfechar">x</button>
+      <div class="img-princ">
+        <img id="trocarimg" src="src/images/produto 3.png" alt="">
+        <div class=img-roda>
+          <img style="margin-right: 20px;" onclick="img1();" src="./src/images/img1.png" alt="">
+          <img style="margin-right: 20px;" onclick="img2();" src="./src/images/img2.png" alt="">
+          <img onclick="img3();" src="./src/images/img3.png" alt="">
+        </div>
       </div>
-
-      <!-- MODAL-->
-      <div class="posicao-modal">
-      <div id="mostrando" class="modal">
-        <button onclick="fechamodal()" class="btnfechar">x</button>
-        <div class="img-princ">
-          <img id="trocarimg"  src="src/images/produto 3.png" alt="">
-          <div class=img-roda>
-          <img style="margin-right: 20px;" onclick="img1();"  src="./src/images/img1.png" alt="">
-          <img style="margin-right: 20px;" onclick="img2();"  src="./src/images/img2.png" alt="">
-          <img  onclick="img3();" src="./src/images/img3.png" alt="">
-        </div>
-        </div>
-        <div class="tex-modal">
+      <div class="tex-modal">
         <div class="title-modal">
           <h3>Tortilette de Laranja Lima com<br> Amoras</h3>
         </div>
-          <div class="sub-modal">
-            <p>R$12,00</p>
-          </div>
-          <div class="texto-modal">
-            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do tempor incididun ut labore et dolore magna aliqua. Ut enim ad mi , quis nostrud veniam exercitation.</p>
-          </div>
-          <div>
-            <span>+ <button>01</button> -</span>
-            <button class="btn-carrinho"> Adicionar ao carrinho</button>
-          </div>
+        <div class="sub-modal">
+          <p>R$12,00</p>
         </div>
-        
+        <div class="texto-modal">
+          <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do tempor incididun ut labore et dolore magna aliqua. Ut enim ad mi , quis nostrud veniam exercitation.</p>
         </div>
-      </div>
-<!--fim modal-->
-      <div onclick="mostramodal()" class="cards">
-        <div  class="card">
-          <img class="card-img-top" src="src/images/produto 2.png" width="306px" height="306px" alt="docinho">
-          <div class="card-body">
-            <h5 class="card-title">Macaron Diversos 90g</h5>
-            <p class="card-text especial">R$ 12,00</p>
-
-          </div>
+        <div>
+          <span><button class="btn-menos">-</button> <input class="vl-carrinho" type="number" value="0"> <button class="btn-mais">+</button></span>
+          <button class="btn-carrinho"> Adicionar ao carrinho</button>
         </div>
-        <div class="card">
-          <img class="card-img-top" src="src/images/produto 3.png" width="306px" height="306px" alt="docinho">
-          <div class="card-body">
-            <h5 class="card-title">Tortilette de Laranja Lima com Amoras</h5>
-            <p class="card-text">R$ 12,00</p>
-            
-
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="src/images/produto 1.png" width="306px" height="306px" alt="docinho">
-          <div class="card-body">
-            <h5 class="card-title">Fatia de Torta Gelada de Café com Chocolate Amargo</h5>
-            <p class="card-text">R$ 11,00</p>
-          </div>
-        </div>
-      
-      </div>
-       <div id="mais" class="addcards">
-      <div class="card  ">
-        <img class="card-img-top" src="src/images/produto 5.png" width="306px" height="306px" alt="docinho">
-        <div class="card-body">
-          <h5 class="card-title">Cupcake de Morango Glaceado</h5>
-          <p class="card-text">R$ 11,00</p>
-
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="src/images/produto 4.png" width="306px" height="306px" alt="docinho">
-        <div class="card-body">
-          <h5 class="card-title">Cupcake de Morango Glaceado</h5>
-          <p class="card-text">R$ 6,00</p>
-
-        </div>
-      </div>
-      <div class="card ">
-        <img class="card-img-top" src="src/images/produto 6.png" width="306px" height="306px" alt="docinho">
-        <div class="card-body">
-          <h5 class="card-title">Fatia de Torta Gelada de Frutas Vermelhas</h5>
-          <p class="card-text">R$ 14,00</p>
-
-        </div>
-      </div>
-    </div>
-      </div>
-      <div class="btn-prod">
-        <button class="btn btn-produtos" onclick="mostra()"> ver mais</button>
       </div>
 
     </div>
- 
+  </div>
+  <!--fim modal-->
+
+  <!-- Produtos -->
+  <section onclick="mostramodal()" class="produtos container">
+    <h2>Produtos</h2>
+    <ul class="cards">
+      <li class="card ">
+        <img src="src/images/produto 2.png" width="306px" height="306px" alt="docinho">
+        <div class="desc-card">
+          <h5>Macaron Diversos 90g</h5>
+          <p>R$ 12,00</p>
+        </div>
+      </li>
+      <li class="card"">
+          <img src=" src/images/produto 3.png" width="306px" height="306px" alt="docinho">
+        <div class="desc-card">
+          <h5>Tortilette de Laranja Lima com Amoras</h5>
+          <p>R$ 9,00</p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="src/images/produto 1.png" width="306px" height="306px" alt="docinho">
+        <div class="desc-card">
+          <h5>Fatia de Torta Gelada de Café com Chocolate Amargo</h5>
+          <p>R$ 9,00</p>
+        </div>
+      </li>
+    </ul>
+
+    <!-- area de mais Produtos -->
+    <div id="mais" class="cards-add">
+      <ul class="cards">
+        <li class="card">
+          <img src="src/images/produto 4.png" width="306px" height="306px" alt="docinho">
+          <div class="desc-card">
+            <h5>Macaron Diversos 90g</h5>
+            <p>R$ 12,00</p>
+          </div>
+        </li>
+        <li class="card"">
+          <img src=" src/images/produto 5.png" width="306px" height="306px" alt="docinho">
+          <div class="desc-card">
+            <h5>Tortilette de Laranja Lima com Amoras</h5>
+            <p>R$ 9,00</p>
+          </div>
+        </li>
+        <li class="card">
+          <img src="src/images/produto 6.png" width="306px" height="306px" alt="docinho">
+          <div class="desc-card">
+            <h5>Fatia de Torta Gelada de Café com Chocolate Amargo</h5>
+            <p>R$ 9,00</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </section>
+
+  <div class="btn-produto">
+    <!-- <input class="btn" type="button" id="mais" onclick="mudarNome();" value="ver mais" /> -->
+    <button class="btn" id="btnmostra" onclick="mostra()" value="ver mais"> ver mais</button>
   </div>
 
-  <section>
-      <div class=" titulo-contato">
-          <p>Se interessou pelos nossos serviços? Manda uma
-            mensagem pra gente. :)</p>
-      </div>
-      <div id="contato" class=" contato">
-        <form class="form-contato">
-          <div class="item">
-            <label for="nome">NOME</label>
-            <input type="text" id="nome" placeholder="Ex.: Renata Lopes">
-          </div>
-          <div class="item">
-            <label for="telefone">TELEFONE</label>
-            <input type="text" id="email" placeholder="(xx) x xxxx.xxxx">
-          </div>
-          <div class="item">
-            <label for="email">EMAIL</label>
-            <input type="text" id="mensagem" placeholder="exemplo@exemplo.com.br">
-          </div>
-          <div class="item">
-            <label for="espec">MENSAGEM</label>
-            <textarea id="espec" placeholder="Digite aqui a sua mensagem"></textarea>
-          </div>
-          <div><button class="btn-form">Enviar</button></div>
-        </form>
-        <div class="card-local">
-          <div class="titulo-card-local">
-            <p>Você também pode<br> nos fazer uma visita.</p>
-          </div>
-          <div class="img-local"><img src="src/images/localizacao.png" alt="">
-            <div class="sub-title-local">
-              <div class="icon-loc">
-                <img src="src/icons/localizacao-branca.png" alt="">
-              </div>
-              <div class="subt-card-local">
-                <p>R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.</p>
-              </div>
-            </div>
-            <button class="btn-loc"> traçar Rota</button>
-          </div>
-      </div>
-      </div>
-      </section>
 
-      <footer>
-        <div class="footer">
-          <div class="image-footer">
-            <img src="src/images/logo cinza.png" alt="">
-          </div>
-          <div class="lista-footer">
-            <ul>
-              <li>
-                <img src="src/icons/Telefone - Filled 01.svg" alt="">
-                <span class="text-fot">+55 (87) 3312.4057</span>
-              </li>
-              <li>
-                <img src="src/icons/email.svg" alt="">
-                <span class="text-fot">contato@babakery.com.br </span>
-              </li>
-              <li class="linha-cinza"></li>
-              <li>
-                <img src="src/icons/localizacao.svg" alt="">
-                <span class="text-fot">R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.</span>
-              </li>
-            </ul>
 
-            <div  class="icon-voltar">
-              <div  style="list-style-type: none;"> <a href="#topo"><img   src="src/icons/voltar.svg" alt=""></div></a></div>
 
-            </div>
-          </div>
+  <!-- Formulário -->
+
+  <section class="formulario container">
+    <div class="form-container">
+      <h2>Se interessou pelos nossos serviços? Manda uma
+        mensagem pra gente. :)</h2>
+      <form class="form">
+        <div class="item">
+          <label for="nome">NOME</label>
+          <input type="text" id="nome" placeholder="Ex.: Renata Lopes">
         </div>
-        <div class=" container linha">
-          <div class="caixa-text-linha">
-            <div class="text-linha">
-              <span>Ba Bakery - Copyright 2020 © Todos os direitos reservados. </span>
-            </div>
-          </div>
+        <div class="item">
+          <label for="telefone">TELEFONE</label>
+          <input type="text" id="email" placeholder="(xx) x xxxx.xxxx">
         </div>
-      </footer>
+        <div class="item">
+          <label for="email">EMAIL</label>
+          <input type="text" id="mensagem" placeholder="exemplo@exemplo.com.br">
+        </div>
+        <div class="item">
+          <label for="espec">MENSAGEM</label>
+          <textarea id="espec" placeholder="Digite aqui a sua mensagem"></textarea>
+        </div class="item">
+        <button class="btn btn-form">Enviar</button>
+      </form>
+    </div>
+
+    <!-- card-local -->
+    <section class="card-form">
+      <div class="container-card">
+        <h4>Você também pode<br> nos fazer uma visita.</h4>
+        <img src="src/images/localizacao.png" alt="">
+        <div class="endereco">
+          <div><img src="src/icons/localizacao-branca.png" alt=""></div>
+          <p>R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.</p>
+        </div>
+        <button class="btn btn-local"> traçar Rota</button>
+
+      </div>
+    </section>
+  </section>
+  <!-- footer -->
+  <footer class="footer container">
+    <div class="img-footer">
+      <img src="src/images/logo cinza.png" alt="">
+    </div>
+    <div class="lista-footer">
+      <ul class="contatos">
+        <li>
+          <div class="icons"> <img src="src/icons/Telefone - Filled 01.svg" alt=""></div>
+          <p>+55 (87) 3312.4057</p>
+        </li>
+        <li>
+          <div class="icons"><img src="src/icons/email.svg" alt=""></div>
+          <p>contato@babakery.com.br </p>
+        </li>
+        <li class="linha-cinza"></li>
+        <li>
+          <div class="icons"><img src="src/icons/localizacao.svg" alt=""></div>
+          <p>R. Hermílio Arantes, 1040 - Vila dos Coqueiros. Graças, Recife - PE.</ps>
+        </li>
+      </ul>
+    </div>
+    <div class="icon-voltar">
+      <div><a href="#topo"><img src="src/icons/voltar.svg" alt=""></a></div>
+    </div>
+
+
+  </footer>
+  <div class="container copyright">
+    <h4>Ba Bakery - Copyright 2020 © Todos os direitos reservados. </h4>
+  </div>
 </body>
+
 </html>
